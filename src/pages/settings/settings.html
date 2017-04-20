@@ -1,0 +1,21 @@
+<ion-content>
+    <div class="header-wrapper">
+        <div class="title">Settings</div>
+    </div>
+    <div class="settings-wrapper">
+        <div class="settings">
+            <ion-item>
+                <ion-label>Receive push notifications</ion-label>
+                <ion-checkbox [(ngModel)]="pushNotifications" color="secondary" checked="true"></ion-checkbox>
+            </ion-item>
+            <ion-item>
+                <ion-label>Sound</ion-label>
+                <ion-checkbox [(ngModel)]="sound" color="secondary" checked="true"></ion-checkbox>
+            </ion-item>
+        </div>
+        <div class="action-wrapper">
+            <button class="tappy-button btn-back" ion-button (click)="back()">Back</button>
+            <button class="tappy-button highlighted btn-back" ion-button (click)="save()">Save</button>
+        </div>
+    </div>
+</ion-content>

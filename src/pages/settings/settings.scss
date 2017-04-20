@@ -1,0 +1,25 @@
+settings {
+    .header-wrapper {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 30px;
+        color: $primary-text-color;
+    }
+
+    .settings-wrapper {
+        padding: 20px;
+
+        .settings {
+            margin: 30px;
+            margin-left: 0px;
+
+            .label-md {
+                color: $primary-text-color;
+            }
+        }
+
+        .action-wrapper {
+            display: flex;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+<ion-content>
+    <div class="main-menu-wrapper">
+        <div class="logo-wrapper">
+            <img class="logo" src="assets/images/logo.png" alt="" />
+            <div class="game-name">Tappy Tap</div>
+        </div>
+        <div class="your-name-wrapper">
+            <ion-item [ngClass]="{'name-error': nameInvalid}">
+                <ion-label>Nickname</ion-label>
+                <ion-input type="text" name="name" [(ngModel)]="name" (focus)="nameEdit = true" [ngModelOptions]="{standalone: true}"></ion-input>
+            </ion-item>
+            <button *ngIf="nameEdit" ion-button type="submit" (click)="saveName()">Save</button>
+        </div>
+        <div class="highscore-wrapper">
+            <div *ngIf="!highscore">No highscore yet</div>
+            <div *ngIf="highscore">
+                <span>Your highscore: {{ highscore }}</span>
+                <ion-icon *ngIf="!highscoreSynced && !synchronizingBestScore" class="no-sync-warning" name="warning"></ion-icon>
+                <ion-spinner *ngIf="synchronizingBestScore"></ion-spinner>
+            </div>
+            <div *ngIf="highscore" class="rank">
+                <span>Rank:</span>
+                <span *ngIf="!retrievingRank">{{ rank }}</span>
+                <ion-icon *ngIf="!retrievingRank && !rank" class="no-sync-warning" name="warning"></ion-icon>
+                <ion-spinner *ngIf="retrievingRank"></ion-spinner>
+            </div>
+        </div>
+        <div class="menu-wrapper">
+            <div class="menu-item" (click)="startGameMenu()">
+                <button class="tappy-button highlighted" ion-button full>START GAME</button>
+            </div>
+            <!--<div class="menu-item" (click)="instructionsMenu()">
+                <button ion-button full>INSTRUCTIONS</button>
+            </div>-->
+            <div class="menu-item" (click)="highscoreMenu()">
+                <button class="tappy-button" ion-button full>HIGH SCORES</button>
+            </div>
+            <div class="menu-item" (click)="settingsMenu()">
+                <button class="tappy-button highlighted" ion-button full>SETTINGS</button>
+            </div>
+        </div>
+    </div>
+</ion-content>
+<ion-footer>
+    <div class="version">{{ version }}</div>
+</ion-footer>

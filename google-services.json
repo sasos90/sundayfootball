@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "651599340960",
+    "firebase_url": "https://tappy-tappy-1b5bb.firebaseio.com",
+    "project_id": "tappy-tappy-1b5bb",
+    "storage_bucket": "tappy-tappy-1b5bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:651599340960:android:480dee9dde623208",
+        "android_client_info": {
+          "package_name": "si.sasosabotin.tappytappy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "651599340960-npcqj06s4nec6oo58990teb8c4d7vbpn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCk7kd9qTOanfgXLTAiWxZd8bym42cb3GA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,33 @@
+ready-set-go {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: calc(100% - 56px);
+    z-index: 99;
+    margin-top: 56px;
+
+    .ready-set-go-wrapper {
+        position: absolute;
+        color: blue;
+        top: 50%;
+        left: 50%;
+        font-size: 40px;
+        transform: translateX(-50%) translateY(-50%);
+
+        .relative-wrapper {
+            position: relative;
+            color: $accent-color;
+            font-size: 60px;
+            font-weight: bold;
+
+            .step {
+                text-align: center;
+            }
+        }
+    }
+
+    .overlay-background {
+        background: white;
+    }
+}

@@ -1,0 +1,26 @@
+<ion-content>
+    <div class="header-wrapper">
+        <div class="title">High Scores</div>
+    </div>
+    <div class="highscores-wrapper">
+        <div class="highscores">
+            <ion-list>
+                <ion-list-header>All Time</ion-list-header>
+                <ion-item *ngFor="let rank of allTimeHighscores; let i = index;" [ngClass]="{'my-rank': rank._id === (device.uuid || 'TEST_DEVICE')}">
+                    <span class="rank">{{ i+1 }}.</span> {{ rank.name }} <span class="score" item-right>{{ rank.maxScore }}</span>
+                </ion-item>
+                <ion-item *ngIf="notTop10Rank">
+                    <ion-icon name="ios-more"></ion-icon>
+                </ion-item>
+                <ion-item *ngIf="notTop10Rank"><span class="rank">
+                    {{ notTop10Rank.rank }}.</span> {{ 'NAME FROM STORAGE '}} <span class="score" item-right>{{ notTop10Rank.maxScore }}</span>
+                </ion-item>
+            </ion-list>
+        </div>
+    </div>
+</ion-content>
+<ion-footer>
+    <div class="action-wrapper">
+        <button class="tappy-button btn-back" ion-button (click)="back()">Back</button>
+    </div>
+</ion-footer>

@@ -1,0 +1,97 @@
+main-menu {
+    .main-menu-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+        height: calc(100vh - 50px);
+        color: $primary-text-color;
+
+        .logo-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+
+            .logo {
+                max-width: 20%;
+                opacity: 0.3;
+            }
+
+            .game-name {
+                position: absolute;
+                font-size: 25px;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+
+        .your-name-wrapper {
+            display: flex;
+            margin-top: 20px;
+
+            .name-error {
+                .item-inner {
+                    border-bottom-color: #f53d3d;
+                    box-shadow: inset 0 -1px 0 0 #f53d3d;
+                }
+            }
+        }
+
+        .highscore-wrapper {
+            font-size: 20px;
+            margin-top: 30px;
+            text-align: center;
+
+            .rank {
+                margin-top: 10px;
+            }
+
+            ion-spinner {
+                width: 17px;
+                height: 17px;
+            }
+
+            .no-sync-warning {
+                font-size: 1em;
+                color: $accent-color;
+            }
+        }
+
+        .menu-wrapper {
+            text-align: center;
+            font-size: 25px;
+            flex: 1;
+            padding-top: 20px;
+
+            .menu-item {
+                margin-top: 30px;
+                height: 12%;
+
+                button {
+                    padding: 0 5em;
+                    height: 100%;
+                    width: 100%;
+                    margin: 0;
+
+                    &:active {
+                        background-color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        &:before {
+            background: none;
+        }
+
+        .version {
+            float: right;
+            padding: 5px;
+            font-weight: normal;
+            color: $secondary-text-color;
+        }
+    }
+}
