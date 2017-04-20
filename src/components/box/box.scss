@@ -30,6 +30,8 @@ box {
             box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 
             &.front {
+                border-radius: 50%;
+
                 &.target {
                     box-shadow: inset 0px 0px 0px 8px rgba(0, 13, 13, 1);
                 }
@@ -37,6 +39,7 @@ box {
 
             &.back {
                 transform: rotateY( 180deg );
+                border-radius: 50%;
             }
         }
 
