@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="si.sasosabotin.tappytappy" version="1.5.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Tappy Tap</name>
-    <description>Tap the squares as fast as possible and reach the highscore!</description>
+<widget id="si.sasosabotin.sundayfootball" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Sunday Football</name>
+    <description>Kick the balls with tapping as fast as you can!</description>
     <author email="sasos90@gmail.com" href="http://sasosabotin.si/">Saso Sabotin</author>
     <content src="index.html" />
     <access origin="*" />
