@@ -59,7 +59,7 @@ export class MyApp {
                 console.log("Device uuid:", this.device.uuid);
                 // admob AD
                 this.admob.createBanner(<AdMobOptions> {
-                    adId: "ca-app-pub-8663484789528557/4325806029",
+                    adId: "ca-app-pub-8663484789528557/3805501628",
                     position: this.admob.AD_POSITION.BOTTOM_CENTER,
                     isTesting: MyApp.isTestingBanner(this.device)
                 }).then((par) => {
