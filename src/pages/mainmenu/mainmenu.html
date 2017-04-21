@@ -6,7 +6,7 @@
         </div>
         <div class="your-name-wrapper">
             <ion-item [ngClass]="{'name-error': nameInvalid}">
-                <ion-label>Nickname</ion-label>
+                <ion-label>Team</ion-label>
                 <ion-input type="text" name="name" [(ngModel)]="name" (focus)="nameEdit = true" [ngModelOptions]="{standalone: true}"></ion-input>
             </ion-item>
             <button *ngIf="nameEdit" ion-button type="submit" (click)="saveName()">Save</button>
