@@ -46,8 +46,8 @@ export class MyApp {
                 });
 
                 // FIREBASE - SUBSCRIBE TO SUBSCRIBE_TOPIC
-                this.firebase.subscribe(FBKey.SUBSCRIBE_TOPIC.TAPPY_TAP).then(() => {
-                    console.debug("Subscribed for push notifications. Topic: ", FBKey.SUBSCRIBE_TOPIC.TAPPY_TAP);
+                this.firebase.subscribe(FBKey.SUBSCRIBE_TOPIC.SUNDAY_FOOTBALL).then(() => {
+                    console.debug("Subscribed for push notifications. Topic: ", FBKey.SUBSCRIBE_TOPIC.SUNDAY_FOOTBALL);
                 });
 
                 // FIREBASE - permissions for push notifications - iOS
