@@ -4,7 +4,7 @@
     </div>
     <div class="highscores-wrapper">
         <div class="highscores">
-            <ion-list>
+            <ion-list *ngIf="allTimeHighscores.length > 0 && !rankingError">
                 <ion-list-header>All Time</ion-list-header>
                 <ion-item *ngFor="let rank of allTimeHighscores; let i = index;" [ngClass]="{'my-rank': rank._id === (device.uuid || 'TEST_DEVICE')}">
                     <span class="rank">{{ i+1 }}.</span> {{ rank.name }} <span class="score" item-right>{{ rank.maxScore }}</span>
@@ -17,6 +17,8 @@
                 </ion-item>
             </ion-list>
         </div>
+        <div class="no-rankings-available" *ngIf="allTimeHighscores.length === 0 && !rankingError">No rankings available!</div>
+        <div class="ranking-error" *ngIf="rankingError">Error retrieving rankings! Please check your internet connection!</div>
     </div>
 </ion-content>
 <ion-footer>

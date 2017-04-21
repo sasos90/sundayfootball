@@ -12,6 +12,7 @@ export class HighScore {
     // TODO needs interface
     public allTimeHighscores: Array<any> = [];
     public notTop10Rank: any;
+    public rankingError: boolean = false;
 
     constructor(
         public navCtrl: NavController,
@@ -24,7 +25,7 @@ export class HighScore {
             this.allTimeHighscores = highscores.allTime;
             this.notTop10Rank = highscores.userRank;
         }, () => {
-
+            this.rankingError = true;
         });
     }
 
