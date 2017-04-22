@@ -1,11 +1,20 @@
 main-menu {
+    background: url(../assets/images/grass.jpg) no-repeat center;
+    background-size: cover;
+
+    ion-content {
+        &.content {
+            background: none;
+        }
+    }
+
     .main-menu-wrapper {
         display: flex;
         flex-direction: column;
         width: 80%;
         margin: 0 auto;
         height: calc(100vh - 50px);
-        color: $primary-text-color;
+        color: $primary-color-text;
 
         .logo-wrapper {
             display: flex;
@@ -15,12 +24,12 @@ main-menu {
 
             .logo {
                 max-width: 20%;
-                opacity: 0.3;
+                opacity: 0.6;
             }
 
             .game-name {
                 position: absolute;
-                font-size: 25px;
+                font-size: 30px;
                 font-weight: bold;
                 text-transform: uppercase;
             }
@@ -37,8 +46,19 @@ main-menu {
                 }
             }
 
-            .text-input {
-                font-size: 20px;
+            ion-item {
+                background: none;
+
+                .label {
+                    color: $divider-color;
+                }
+
+                .text-input {
+                    font-size: 20px;
+                    color: white;
+                    text-align: center;
+                    margin-left: -12px;
+                }
             }
         }
 
@@ -70,7 +90,7 @@ main-menu {
 
             .menu-item {
                 margin-top: 30px;
-                height: 15%;
+                height: 18%;
 
                 button {
                     padding: 0 5em;
