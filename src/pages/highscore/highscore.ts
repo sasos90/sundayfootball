@@ -9,6 +9,8 @@ import {Device} from "@ionic-native/device";
 })
 export class HighScore {
 
+    // TODO: WHen error: choose another RED color because it is not readable.
+
     // TODO needs interface
     public allTimeHighscores: Array<any> = [];
     public notTop10Rank: any;
