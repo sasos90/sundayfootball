@@ -240,7 +240,7 @@ export class Game {
         if (this.platform.is("cordova") && !this.adPrepared) {
             // Full screen AD
             this.admob.prepareInterstitial(<AdMobOptions> {
-                adId: "ca-app-pub-8663484789528557/3381319629",
+                adId: "ca-app-pub-8663484789528557/9572833620",
                 position: this.admob.AD_POSITION.CENTER,
                 isTesting: MyApp.isTestingBanner(this.device),
                 autoShow: false

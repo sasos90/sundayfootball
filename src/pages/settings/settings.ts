@@ -56,13 +56,13 @@ export class Settings {
 
             if (this.pushNotifications === true) {
                 // Subscribe for push notifications
-                this.firebase.subscribe(FBKey.SUBSCRIBE_TOPIC.TAPPY_TAP).then((success) => {
-                    console.debug("Subscribed for push notifications. Topic: ", FBKey.SUBSCRIBE_TOPIC.TAPPY_TAP, success);
+                this.firebase.subscribe(FBKey.SUBSCRIBE_TOPIC.SUNDAY_FOOTBALL).then((success) => {
+                    console.debug("Subscribed for push notifications. Topic: ", FBKey.SUBSCRIBE_TOPIC.SUNDAY_FOOTBALL, success);
                 });
             } else {
                 // Unsubscribe for push notifications
-                this.firebase.unsubscribe(FBKey.SUBSCRIBE_TOPIC.TAPPY_TAP).then((success) => {
-                    console.debug("Unsubscribed from push notifications. Topic: ", FBKey.SUBSCRIBE_TOPIC.TAPPY_TAP, success);
+                this.firebase.unsubscribe(FBKey.SUBSCRIBE_TOPIC.SUNDAY_FOOTBALL).then((success) => {
+                    console.debug("Unsubscribed from push notifications. Topic: ", FBKey.SUBSCRIBE_TOPIC.SUNDAY_FOOTBALL, success);
                 });
             }
         }

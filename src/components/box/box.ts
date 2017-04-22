@@ -11,9 +11,13 @@ import {Platform} from "ionic-angular";
     selector: 'box',
     template: `
         <div class="box-wrapper" [ngClass]="{hit: hit}" *ngIf="!hideBox">
-            <div class="box front" [ngStyle]="{'background': box.color}" (tap)="tap(box)" (click)="tap(box)" (swipe)="tap(box)" [ngClass]="{target: box.doesMatch(target) && exposed}"></div>
+            <div class="box front" [ngStyle]="{'background': box.color}" (tap)="tap(box)" (click)="tap(box)" (swipe)="tap(box)" [ngClass]="{target: box.doesMatch(target) && exposed}">
+                <img class="ball-picture" src="assets/images/ball.png" alt="">
+            </div>
             <!-- Remove back figure if you don't want the whole flip but just 50% -->
-            <div class="box back" [ngStyle]="{'background': box.color}" (tap)="tap(target)" (click)="tap(target)" (swipe)="tap(target)" ></div>
+            <div class="box back" [ngStyle]="{'background': box.color}" (tap)="tap(target)" (click)="tap(target)" (swipe)="tap(target)">
+                <img class="ball-picture" src="assets/images/ball.png" alt="">
+            </div>
         </div>`
 })
 export class BoxComponent {

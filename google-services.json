@@ -36,6 +36,37 @@
           "status": 2
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:651599340960:android:2fde42e848e01c39",
+        "android_client_info": {
+          "package_name": "si.sasosabotin.sundayfootball"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "651599340960-npcqj06s4nec6oo58990teb8c4d7vbpn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCk7kd9qTOanfgXLTAiWxZd8bym42cb3GA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
     }
   ],
   "configuration_version": "1"

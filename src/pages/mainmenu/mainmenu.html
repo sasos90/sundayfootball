@@ -2,11 +2,11 @@
     <div class="main-menu-wrapper">
         <div class="logo-wrapper">
             <img class="logo" src="assets/images/logo.png" alt="" />
-            <div class="game-name">Tappy Tap</div>
+            <div class="game-name">Sunday Football</div>
         </div>
         <div class="your-name-wrapper">
             <ion-item [ngClass]="{'name-error': nameInvalid}">
-                <ion-label>Nickname</ion-label>
+                <ion-label>Team</ion-label>
                 <ion-input type="text" name="name" [(ngModel)]="name" (focus)="nameEdit = true" [ngModelOptions]="{standalone: true}"></ion-input>
             </ion-item>
             <button *ngIf="nameEdit" ion-button type="submit" (click)="saveName()">Save</button>

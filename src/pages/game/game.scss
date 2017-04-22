@@ -1,5 +1,6 @@
 game {
-    background: white;
+    background: url(../assets/images/grass.jpg) no-repeat center;
+    background-size: cover;
 
     .content-wrapper {
         height: 100%;
@@ -81,7 +82,7 @@ game {
             top: 50%;
             left: 0;
             transform: translateY(-50%);
-            color: $primary-text-color;
+            color: white;
             width: 100%;
             padding: 0px 10px;
             display: flex;
@@ -105,8 +106,6 @@ game {
                 }
 
                 .level {
-                    color: $accent-color;
-
                     .label {
                         display: inline-block;
                         width: 73px;
@@ -179,6 +178,11 @@ game {
                 height: 45px;
                 margin: 0px;
                 box-shadow: 0 2px 4px rgba(33, 33, 33, 0.16), 0 2px 4px rgba(33, 33, 33, 0.23);
+                border-radius: 50%;
+
+                .ball-picture {
+                    opacity: 0.4;
+                }
             }
         }
     }
