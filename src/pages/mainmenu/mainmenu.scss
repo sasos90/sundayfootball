@@ -98,6 +98,10 @@ main-menu {
                     width: 100%;
                     margin: 0;
 
+                    &.tappy-button {
+                        font-size: 25px;
+                    }
+
                     &:active {
                         background-color: $primary-color;
                     }
