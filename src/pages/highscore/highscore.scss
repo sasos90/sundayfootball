@@ -1,9 +1,18 @@
 highscore {
+    background: url(../assets/images/grass.jpg) no-repeat center;
+    background-size: cover;
+
+    ion-content {
+        &.content {
+            background: none;
+        }
+    }
+
     .header-wrapper {
         text-align: center;
         margin-top: 20px;
         font-size: 30px;
-        color: $primary-text-color;
+        color: $primary-color-text;
     }
 
     .highscores-wrapper {
@@ -13,15 +22,39 @@ highscore {
             margin: 30px;
             margin-left: 0px;
 
+            ion-list-header {
+                &.item {
+                    background: none;
+                    color: $primary-color-text;
+                    margin-left: 8px;
+
+                    .label {
+                        text-align: center;
+                    }
+                }
+            }
+
+            ion-item {
+                background: none;
+                color: $primary-color-text;
+            }
+
+            .icon-more {
+                &:before {
+                    font-weight: bold;
+                }
+            }
+
             .my-rank {
                 color: $primary-color;
+                background: white;
             }
         }
 
         .no-rankings-available {
             font-size: 20px;
             text-align: center;
-            color: $primary-text-color;
+            color: $primary-color-text;
         }
 
         .ranking-error {
