@@ -26,7 +26,7 @@ export class MainMenu {
     public version: string = Config.VERSION;
 
     // name
-    public name: string = LocalStorage.get(LSK.NAME) || "TappyTap";
+    public name: string = LocalStorage.get(LSK.NAME) || "Sunday Team";
     public nameInvalid: boolean = false; // name is required
     public nameEdit: boolean = !this.name || false;
 

@@ -17,6 +17,18 @@ highscore {
                 color: $primary-color;
             }
         }
+
+        .no-rankings-available {
+            font-size: 20px;
+            text-align: center;
+            color: $primary-text-color;
+        }
+
+        .ranking-error {
+            font-size: 20px;
+            text-align: center;
+            color: map-get($colors, danger);
+        }
     }
 
     .action-wrapper {

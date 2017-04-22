@@ -36,6 +36,10 @@ main-menu {
                     box-shadow: inset 0 -1px 0 0 #f53d3d;
                 }
             }
+
+            .text-input {
+                font-size: 20px;
+            }
         }
 
         .highscore-wrapper {
@@ -66,7 +70,7 @@ main-menu {
 
             .menu-item {
                 margin-top: 30px;
-                height: 12%;
+                height: 15%;
 
                 button {
                     padding: 0 5em;
