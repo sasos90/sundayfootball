@@ -1,9 +1,18 @@
 settings {
+    background: url(../assets/images/grass.jpg) no-repeat center;
+    background-size: cover;
+
+    ion-content {
+        &.content {
+            background: none;
+        }
+    }
+
     .header-wrapper {
         text-align: center;
         margin-top: 20px;
         font-size: 30px;
-        color: $primary-text-color;
+        color: $primary-color-text;
     }
 
     .settings-wrapper {
@@ -13,8 +22,12 @@ settings {
             margin: 30px;
             margin-left: 0px;
 
+            ion-item {
+                background: none;
+            }
+
             .label-md {
-                color: $primary-text-color;
+                color: $primary-color-text;
             }
         }
 
