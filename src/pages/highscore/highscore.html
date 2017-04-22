@@ -10,10 +10,10 @@
                     <span class="rank">{{ i+1 }}.</span> {{ rank.name }} <span class="score" item-right>{{ rank.maxScore }}</span>
                 </ion-item>
                 <ion-item *ngIf="notTop10Rank">
-                    <ion-icon name="ios-more"></ion-icon>
+                    <ion-icon name="md-more" class="icon-more"></ion-icon>
                 </ion-item>
                 <ion-item *ngIf="notTop10Rank" class="my-rank">
-                    <span class="rank">{{ notTop10Rank.rank }}.</span> {{ 'NAME FROM STORAGE '}} <span class="score" item-right>{{ notTop10Rank.maxScore }}</span>
+                    <span class="rank">{{ notTop10Rank.rank }}.</span> {{ name }} <span class="score" item-right>{{ notTop10Rank.maxScore }}</span>
                 </ion-item>
             </ion-list>
         </div>

@@ -4,11 +4,11 @@ import {Environment} from "../models/Environment";
  */
 export class Config {
     public static ENV: Environment = Environment.LIVE;
-    public static VERSION: string = "0.0.1";
+    public static BACKEND_ENV: Environment = Environment.LIVE;
+    public static VERSION: string = "1.0.0";
     public static SALT: string = "*k9[unD1LrQSQ2_";
 
     // backend host config
-    public static BACKEND_ENV: Environment = Environment.LIVE;
     public static HOST_TEST: string = "http://localhost:3001/";
     public static HOST_LIVE: string = "https://sundayfootball-backend.sasosabotin.si/";
 
