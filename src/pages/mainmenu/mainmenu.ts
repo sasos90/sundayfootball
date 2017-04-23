@@ -92,10 +92,25 @@ export class MainMenu {
         if (this.name && this.name !== "") {
             LocalStorage.set(LSK.NAME, this.name);
             if (notification) {
-                this.toast.create({
-                    message: "Nickname saved",
-                    duration: 3000
-                }).present();
+                this.backend.updateName(this.name, (success) => {
+
+                    if (success) {
+                        this.toast.create({
+                            message: "Nickname saved",
+                            duration: 3000
+                        }).present();
+                    } else {
+                        this.toast.create({
+                            message: "Nickname saved only localy!",
+                            duration: 3000
+                        }).present();
+                    }
+                }, () => {
+                    this.toast.create({
+                        message: "Nickname saved only localy!",
+                        duration: 3000
+                    }).present();
+                });
             }
             this.nameEdit = false;
         } else {
