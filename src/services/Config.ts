@@ -5,7 +5,7 @@ import {Environment} from "../models/Environment";
 export class Config {
     public static ENV: Environment = Environment.LIVE;
     public static BACKEND_ENV: Environment = Environment.LIVE;
-    public static VERSION: string = "1.0.0";
+    public static VERSION: string = "1.0.1";
     public static SALT: string = "*k9[unD1LrQSQ2_";
 
     // backend host config

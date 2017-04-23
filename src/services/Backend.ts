@@ -11,6 +11,7 @@ import {IRankForScoreRequest} from "../models/IRankForScoreRequest";
 import {LSK} from "../models/LSK";
 import {LocalStorage} from "./LocalStorage";
 import {Platform} from "ionic-angular";
+import {IUpdateNameRequest} from "../models/IUpdateNameRequest";
 /**
  * Created by saso on 4/5/17.
  */
@@ -153,5 +154,32 @@ export class Backend {
 
         let timestamp = today.getTime() / 1000;
         return timestamp;
+    }
+
+    public updateName(name: string, successCb: (success) => any, errorCb: () => any) {
+        this.platform.ready().then(() => {
+            let url = this.URL + "updateName";
+            let request: IUpdateNameRequest = {
+                deviceUuid: this.device.uuid || "TEST_DEVICE",
+                name: name
+            };
+
+            this.http.post(url, request).subscribe((response) => {
+                // next
+                console.log("Send score RESPONSE: ", response);
+                let res = response.json();
+                if (res.success) {
+                    successCb(true);
+                } else {
+                    errorCb();
+                }
+            }, (response) => {
+                // error
+                console.error(response);
+                errorCb();
+            }, () => {
+                // complete
+            });
+        });
     }
 }
