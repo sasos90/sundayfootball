@@ -14,4 +14,19 @@ moregames {
         font-size: 30px;
         color: $primary-color-text;
     }
+
+    .container {
+        margin-top: 30px;
+
+        ion-item {
+            &.item {
+                background: none;
+                color: $primary-color-text;
+
+                p {
+                    color: $primary-color-text;
+                }
+            }
+        }
+    }
 }
