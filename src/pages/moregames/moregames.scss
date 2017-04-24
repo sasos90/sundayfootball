@@ -2,6 +2,20 @@ moregames {
     background: url(../assets/images/grass.jpg) no-repeat center;
     background-size: cover;
 
+    ion-navbar {
+        .toolbar-title {
+            color: $primary-color-text;
+        }
+
+        .toolbar-background {
+            background: none;
+        }
+
+        .button-inner {
+            color: $primary-color-text;
+        }
+    }
+
     ion-content {
         &.content {
             background: none;
