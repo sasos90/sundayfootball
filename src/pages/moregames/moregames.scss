@@ -1,0 +1,17 @@
+moregames {
+    background: url(../assets/images/grass.jpg) no-repeat center;
+    background-size: cover;
+
+    ion-content {
+        &.content {
+            background: none;
+        }
+    }
+
+    .header-wrapper {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 30px;
+        color: $primary-color-text;
+    }
+}

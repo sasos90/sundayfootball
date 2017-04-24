@@ -19,6 +19,7 @@ import {AdMob} from '@ionic-native/admob';
 import {Device} from "@ionic-native/device";
 import {Backend} from "../services/Backend";
 import {HttpModule} from "@angular/http";
+import {MoreGames} from "../pages/moregames/moregames";
 
 export class MyHammerConfig extends HammerGestureConfig  {
     overrides = <any>{
@@ -40,7 +41,8 @@ export class MyHammerConfig extends HammerGestureConfig  {
         MainMenu,
         Instructions,
         HighScore,
-        Settings
+        Settings,
+        MoreGames
     ],
     imports: [
         IonicModule.forRoot(MyApp),
@@ -57,7 +59,8 @@ export class MyHammerConfig extends HammerGestureConfig  {
         MainMenu,
         Instructions,
         HighScore,
-        Settings
+        Settings,
+        MoreGames
     ],
     providers: [
         StatusBar,
