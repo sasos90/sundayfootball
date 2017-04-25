@@ -1,0 +1,46 @@
+moregames {
+    background: url(../assets/images/grass.jpg) no-repeat center;
+    background-size: cover;
+
+    ion-navbar {
+        .toolbar-title {
+            color: $primary-color-text;
+        }
+
+        .toolbar-background {
+            background: none;
+        }
+
+        .button-inner {
+            color: $primary-color-text;
+        }
+    }
+
+    ion-content {
+        &.content {
+            background: none;
+        }
+    }
+
+    .header-wrapper {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 30px;
+        color: $primary-color-text;
+    }
+
+    .container {
+        margin-top: 30px;
+
+        a {
+            &.item {
+                background: none;
+                color: $primary-color-text;
+
+                p {
+                    color: $primary-color-text;
+                }
+            }
+        }
+    }
+}
