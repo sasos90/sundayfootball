@@ -21,6 +21,10 @@ export class FBKey {
         MAIN_MENU: "FINAL_RESULT_to_mainmenu"
     };
 
+    public static MORE_GAMES: any = {
+        SCREEN: "MORE_GAMES_SCREEN"
+    };
+
     public static BOX: any = {
         MISSED: "BOX_missed_box"
     };

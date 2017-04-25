@@ -10,6 +10,7 @@ import {LSK} from "../../models/LSK";
 import {Config} from "../../services/Config";
 import {IHighScore} from "../../models/IHighScore";
 import {Backend} from "../../services/Backend";
+import {MoreGames} from "../moregames/moregames";
 
 @Component({
     selector: 'main-menu',
@@ -86,6 +87,10 @@ export class MainMenu {
 
     public settingsMenu() {
         this.navCtrl.push(Settings);
+    }
+
+    public moreGamesMenu() {
+        this.navCtrl.push(MoreGames);
     }
 
     public saveName(notification: boolean = true) {
